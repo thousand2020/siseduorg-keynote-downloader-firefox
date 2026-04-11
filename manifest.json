@@ -13,6 +13,12 @@
         "default_title": "Keynote Downloader"
     },
     "background": {
-        "service_worker": "background/service_worker.js"
+        "scripts": ["background/service_worker.js"]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "keynotedl@sisedu.org",
+            "strict_min_version": "109.0"
+        }
     }
 }
