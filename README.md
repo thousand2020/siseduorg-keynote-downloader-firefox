@@ -9,7 +9,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853?style=for-the-badge&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 
-**A lightweight Chrome extension that lets you download any keynote on sisedu.org as a PDF with a single click — no fiddling with the site required.**
+**A lightweight ~~Chrome~~ Firefox extension that lets you download any keynote on sisedu.org as a PDF with a single click — no fiddling with the site required.**
 
 [Features](#-features) • [Installation](#-installation) • [How It Works](#-how-it-works) • [Project Structure](#-project-structure) • [Contributing](#-contributing)
 
@@ -58,21 +58,21 @@ sisedu.org provides **no way to download keynotes** — there's no download butt
 - 📦 **No manual digging** — No need to hunt through network requests or page source for the PDF URL
 - ⚡ **One click** — Open the extension, click download, done
 - 🔓 **Open source** — See exactly what the extension does and how it works
-- 🛠️ **Learning project** — Built to learn Chrome Extension development with Manifest V3
+- 🛠️ **Learning project** — Built to learn ~~Chrome~~ Firefox Extension development with Manifest V3
 
 ---
 
 ## 🚀 Installation
 
-Since this extension isn't on the Chrome Web Store, you'll need to load it manually:
+Since this extension isn't on the ~~Chrome~~ Firefox Web Store, you'll need to load it manually:
 
 1. **Download or clone this repository**
    ```bash
-   git clone https://github.com/HimC29/siseduorg-keynote-downloader.git
+   git clone https://github.com/thousand2020/siseduorg-keynote-downloader-firefox.git
    ```
 
-2. **Open Chrome Extensions**  
-   Navigate to `chrome://extensions/`
+2. **Open ~~Chrome~~ Firefox Extensions**  
+   Navigate to `firefox://extensions/`
 
 3. **Enable Developer Mode**  
    Toggle **Developer mode** in the top right corner
@@ -81,7 +81,7 @@ Since this extension isn't on the Chrome Web Store, you'll need to load it manua
    Click **Load unpacked** and select the cloned folder
 
 5. **Pin it** *(optional)*  
-   Click the puzzle icon in Chrome's toolbar and pin the extension for easy access
+   Click the puzzle icon in ~~Chrome~~ Firefox's toolbar and pin the extension for easy access
 
 ---
 
@@ -124,14 +124,14 @@ The UUID and metadata are extracted from the keynote module page by parsing its 
 
 ### Status Persistence
 
-Status messages (e.g. `"Fetching PDF..."`, `"Download complete!"`) are saved to `chrome.storage.session` by the background service worker. When you reopen the popup mid-download, it reads the last known status so you're never left wondering what's happening.
+Status messages (e.g. `"Fetching PDF..."`, `"Download complete!"`) are saved to `firefox.storage.session` by the background service worker. When you reopen the popup mid-download, it reads the last known status so you're never left wondering what's happening.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-siseduorg-keynote-downloader/
+siseduorg-keynote-downloader-firefox/
 ├── manifest.json                  — Extension manifest (MV3)
 ├── media/
 │   └── logo.png                   — Extension icon
@@ -150,6 +150,8 @@ siseduorg-keynote-downloader/
 ---
 
 ## 📝 Changelog
+
+### versions below are made by himc29
 
 ### v1.0.1
 - 🔧 Fixed wrong PDF being downloaded on some keynotes
@@ -201,7 +203,7 @@ Contributions are welcome! If you find a bug or want to improve the extension, f
 - Try refreshing the page and reopening the extension
 
 ### Clicking download does nothing
-- Open Chrome DevTools on the popup (`chrome://extensions/` → **Inspect views: popup**) and check the console for errors
+- Open ~~Chrome~~ Firefox DevTools on the popup (`firefox://extensions/` → **Inspect views: popup**) and check the console for errors
 - Make sure Developer Mode is enabled and the extension is loaded correctly
 
 ### Status is stuck on "Fetching PDF..."
@@ -221,6 +223,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Made with ❤️ by [HimC29](https://github.com/HimC29)**
 
-[Report Bug](https://github.com/HimC29/siseduorg-keynote-downloader/issues) • [Request Feature](https://github.com/HimC29/siseduorg-keynote-downloader/issues)
+**FireFox port by [thousand2020](https://github.com/thousand2020)**
+
+[Report Bug](https://github.com/thousand2020/siseduorg-keynote-downloader-firefox/issues) • [Request Feature](https://github.com/thousand2020/siseduorg-keynote-downloader-firefox/issues)
 
 </div>
