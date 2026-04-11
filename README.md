@@ -2,7 +2,7 @@
 
 # 📄 sisedu.org Keynote Downloader
 
-### A Chrome Extension to Download Keynotes from sisedu.org as PDF
+### A ~~Chrome~~ Firefox Extension to Download Keynotes from sisedu.org as PDF
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
