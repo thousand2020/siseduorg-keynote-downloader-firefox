@@ -1,7 +1,8 @@
 <div align="center">
 
 # 📄 sisedu.org Keynote Downloader
-
+# THIS REPO IS DEPRECIATED, THE OFFICIAL KEYNOTE DOWNLOADER HAS FIREFOX SUPPORT 
+# https://addons.mozilla.org/en-US/firefox/addon/sisedu-org-keynote-downloader/
 ### A ~~Chrome~~ Firefox Extension to Download Keynotes from sisedu.org as PDF
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
